@@ -4,6 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import { LanguageToggle } from "@/components/language-toggle"
+import { SidebarNav } from "@/components/SidebarNav"
 import { translations, type Language } from "@/lib/translations"
 
 export default function Home() {
@@ -60,19 +61,7 @@ export default function Home() {
         <LanguageToggle onLanguageChange={handleLanguageChange} currentLanguage={language} />
       </div>
 
-      <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
-        <div className="flex flex-col gap-4">
-          {["intro", "focus", "projects", "tools", "recommendations", "work", "connect"].map((section) => (
-            <button
-              key={section}
-              onClick={() => document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })}
-              className={`w-2 h-8 rounded-full transition-all duration-500 ${activeSection === section ? "bg-foreground" : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
-                }`}
-              aria-label={`Navigate to ${section}`}
-            />
-          ))}
-        </div>
-      </nav>
+      <SidebarNav activeSection={activeSection} />
 
       <main className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16">
         <header
@@ -177,7 +166,6 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Tools section */}
             <div className="space-y-8 pt-12">
               <div className="space-y-4">
                 <h3 className="text-2xl sm:text-3xl font-light">{t.tools}</h3>
@@ -258,12 +246,7 @@ export default function Home() {
                   )}
 
                   <div className="aspect-video relative overflow-hidden bg-muted">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                   </div>
 
                   <div className="p-4 space-y-3">
@@ -313,7 +296,6 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Portfolio Meta Card - Compact version */}
             <div className="relative overflow-hidden border-2 border-dashed border-border rounded-lg p-6 bg-gradient-to-br from-muted/20 to-muted/5 hover:border-muted-foreground/30 transition-all duration-300 group">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
@@ -337,16 +319,14 @@ export default function Home() {
                   <p className="text-sm text-muted-foreground leading-relaxed">{t.portfolioMetaDescription}</p>
 
                   <div className="flex flex-wrap gap-1.5 pt-1">
-                    {["Vercel v0", "Lovable", language === "es" ? "Prototipado rápido" : "Rapid Prototyping"].map(
-                      (tech) => (
-                        <span
-                          key={tech}
-                          className="px-2 py-0.5 text-xs font-medium text-foreground bg-background border border-border rounded-full"
-                        >
-                          {tech}
-                        </span>
-                      ),
-                    )}
+                    {["Next.js", "TypeScript", "Tailwind CSS"].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-0.5 text-xs font-medium text-foreground bg-background border border-border rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -408,7 +388,6 @@ export default function Home() {
 
         <section id="recommendations" ref={(el) => (sectionsRef.current[4] = el)} className="py-12 sm:py-16 opacity-0">
           <div className="space-y-16 sm:space-y-20">
-            {/* People Recommendations */}
             <div className="space-y-8">
               <h3 className="text-2xl sm:text-3xl font-light">{t.peopleRecommend}</h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -416,8 +395,8 @@ export default function Home() {
                   <div
                     key={index}
                     className={`group p-6 border rounded-lg transition-all duration-300 hover:shadow-lg ${index === 2
-                      ? "border-blue-500/30 bg-blue-500/5 hover:border-blue-500/50 hover:bg-blue-500/10"
-                      : "border-border hover:border-muted-foreground/50"
+                        ? "border-blue-500/30 bg-blue-500/5 hover:border-blue-500/50 hover:bg-blue-500/10"
+                        : "border-border hover:border-muted-foreground/50"
                       }`}
                   >
                     <div className="space-y-4">
@@ -433,7 +412,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* LinkedIn CTA for more recommendations */}
             <div className="flex flex-col items-center gap-4 pt-8">
               <p className="text-center text-muted-foreground">
                 {language === "es"
@@ -548,7 +526,9 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/in/javier-llorente-/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm"
                 >
                   <div className="space-y-2">
