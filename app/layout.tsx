@@ -10,9 +10,9 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  title: "Javier Llorente - Portfolio",
+  title: "Javier Llorente | Portfolio",
   description:
-    "Product Owner & UX Strategist specializing in digital products, user research, and go-to-market strategies.",
+    "Product Owner y emprendedor enfocado en productos digitales, experiencia de usuario y estrategia.",
 }
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={`${geist.variable}`}>
+    <html lang="es" className={geist.variable}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )
