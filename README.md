@@ -31,3 +31,6 @@ Portfolio personal de Javier Llorente, enfocado en experiencia, proyectos y reco
 ```bash
 npm install
 npm run dev
+## Deploy
+
+El sitio está desplegado en Vercel.
