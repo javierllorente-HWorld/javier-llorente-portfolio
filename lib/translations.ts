@@ -15,7 +15,7 @@ export const translations = {
       "Always interested in new opportunities, collaborations, and conversations about technology and design.",
     elsewhere: "ELSEWHERE",
     allRightsReserved: "All rights reserved",
-    builtWith: "Built with v0.dev by",
+    builtWith: "Built by",
     intro: "Product Owner and entrepreneur building digital products at the intersection of",
     design: "design",
     technology: "technology",
@@ -27,7 +27,7 @@ export const translations = {
     viewProject: "View Project",
     portfolioMetaTitle: "This Portfolio",
     portfolioMetaDescription:
-      "This page representing my portfolio was also built by me, combining rapid prototyping between Lovable and Vercel v0. A demonstration of modern no-code and AI-assisted development tools for creating professional digital experiences.",
+      "This portfolio was designed and built by me as a way to showcase my experience, projects, and approach to building digital products.",
     tools: "Tools",
     toolsDescription: "Technologies and tools I use in my daily work, organized by category.",
     toolCategories: [
@@ -249,7 +249,7 @@ export const translations = {
       "Siempre interesado en nuevas oportunidades, colaboraciones y conversaciones sobre tecnología y diseño.",
     elsewhere: "OTROS SITIOS",
     allRightsReserved: "Todos los derechos reservados",
-    builtWith: "Construido con v0.dev por",
+    builtWith: "Construido por",
     intro: "Product Owner y emprendedor construyendo productos digitales en la intersección del",
     design: "diseño",
     technology: "tecnología",
@@ -261,7 +261,7 @@ export const translations = {
     viewProject: "Ver Proyecto",
     portfolioMetaTitle: "Este Portfolio",
     portfolioMetaDescription:
-      "Esta página que representa mi portfolio también fue hecha por mí, combinando prototipado rápido entre Lovable y Vercel v0. Una demostración de herramientas modernas de desarrollo no-code y asistido por IA para crear experiencias digitales profesionales.",
+      "Este portfolio fue diseñado y desarrollado por mí como una forma de mostrar mi experiencia, proyectos y forma de construir productos digitales.",
     tools: "Herramientas",
     toolsDescription: "Tecnologías y herramientas que utilizo en mi trabajo diario, organizadas por categoría.",
     toolCategories: [
