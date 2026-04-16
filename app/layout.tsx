@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: "Javier Llorente - Portfolio",
   description:
     "Product Owner & UX Strategist specializing in digital products, user research, and go-to-market strategies.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -22,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
+    <html lang="es" className={`${geist.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )
