@@ -66,9 +66,8 @@ export default function Home() {
             <button
               key={section}
               onClick={() => document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })}
-              className={`w-2 h-8 rounded-full transition-all duration-500 ${
-                activeSection === section ? "bg-foreground" : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
-              }`}
+              className={`w-2 h-8 rounded-full transition-all duration-500 ${activeSection === section ? "bg-foreground" : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
+                }`}
               aria-label={`Navigate to ${section}`}
             />
           ))}
@@ -82,7 +81,7 @@ export default function Home() {
           className="min-h-screen flex items-center opacity-0"
         >
           <div className="w-full space-y-8 sm:space-y-12">
-            <div className="text-sm text-muted-foreground font-mono tracking-wider">{t.portfolio} / 2025</div>
+            <div className="text-sm text-muted-foreground font-mono tracking-wider">{t.portfolio} / 2026</div>
 
             <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full items-start">
               <div className="lg:col-span-3 space-y-6 sm:space-y-8">
@@ -127,7 +126,7 @@ export default function Home() {
                   <div className="space-y-2">
                     <div className="text-foreground">{t.jobs[0].role}</div>
                     <div className="text-muted-foreground">@ START Fellowship</div>
-                    <div className="text-xs text-muted-foreground">2025 — {t.present}</div>
+                    <div className="text-xs text-muted-foreground">2026 — {t.present}</div>
                   </div>
                 </div>
               </div>
@@ -249,9 +248,8 @@ export default function Home() {
               {t.projects.map((project, index) => (
                 <div
                   key={index}
-                  className={`group relative overflow-hidden border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-md ${
-                    index === 0 ? "bg-blue-500/5 border-blue-500/30 hover:border-blue-500/50" : ""
-                  }`}
+                  className={`group relative overflow-hidden border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-md ${index === 0 ? "bg-blue-500/5 border-blue-500/30 hover:border-blue-500/50" : ""
+                    }`}
                 >
                   {index === 0 && (
                     <div className="absolute top-2 right-2 z-10 px-2 py-0.5 text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-800 rounded-full">
@@ -398,7 +396,7 @@ export default function Home() {
                     <div className="mt-3 text-center">
                       <p className="text-sm text-gray-700 font-mono tracking-wide">
                         {photo.caption}
-                        {index === 0 && " - 2025"}
+                        {index === 0 && " - 2026"}
                       </p>
                     </div>
                   </div>
@@ -417,11 +415,10 @@ export default function Home() {
                 {t.testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className={`group p-6 border rounded-lg transition-all duration-300 hover:shadow-lg ${
-                      index === 2
-                        ? "border-blue-500/30 bg-blue-500/5 hover:border-blue-500/50 hover:bg-blue-500/10"
-                        : "border-border hover:border-muted-foreground/50"
-                    }`}
+                    className={`group p-6 border rounded-lg transition-all duration-300 hover:shadow-lg ${index === 2
+                      ? "border-blue-500/30 bg-blue-500/5 hover:border-blue-500/50 hover:bg-blue-500/10"
+                      : "border-border hover:border-muted-foreground/50"
+                      }`}
                   >
                     <div className="space-y-4">
                       <p className="text-sm text-muted-foreground leading-relaxed italic">"{testimonial.text}"</p>
@@ -569,7 +566,7 @@ export default function Home() {
         <footer className="py-12 sm:py-16 border-t border-border">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
             <div className="space-y-2">
-              <div className="text-sm text-muted-foreground">© 2025 Javier LLorente. {t.allRightsReserved}</div>
+              <div className="text-sm text-muted-foreground">© 2026 Javier LLorente. {t.allRightsReserved}</div>
               <div className="text-xs text-muted-foreground">{t.builtWith} Javier LLorente</div>
             </div>
 
