@@ -1,6 +1,8 @@
 # Javier Llorente Portfolio
 
-Portfolio personal de Javier Llorente, enfocado en experiencia, proyectos y recorrido profesional en producto digital.
+Este es mi portfolio personal, creado como una primera experiencia práctica usando vibe coding para diseñar, iterar y publicar un sitio propio.
+
+El objetivo de este proyecto fue explorar una forma rápida de pasar de una idea a un producto visible, combinando criterio de producto, herramientas AI y desarrollo frontend.
 
 ## Stack
 
@@ -8,11 +10,11 @@ Portfolio personal de Javier Llorente, enfocado en experiencia, proyectos y reco
 - TypeScript
 - Tailwind CSS
 
-## Funcionalidades
+## Qué incluye
 
 - Sitio one-page
-- Idioma español / inglés
-- Navegación lateral por secciones
+- Versión en español / inglés
+- Navegación por secciones
 - Modo oscuro / claro
 - Diseño responsive
 
@@ -26,11 +28,16 @@ Portfolio personal de Javier Llorente, enfocado en experiencia, proyectos y reco
 - Experiencia
 - Contacto
 
-## Instalación
+## Aprendizajes
+
+Con este proyecto practiqué:
+- uso de herramientas de vibe coding para crear un portfolio funcional
+- iteración rápida sobre diseño y contenido
+- publicación y despliegue de un proyecto en Vercel
+- organización básica de un proyecto frontend en GitHub
+
+## Instalación local
 
 ```bash
 npm install
 npm run dev
-## Deploy
-
-El sitio está desplegado en Vercel.
