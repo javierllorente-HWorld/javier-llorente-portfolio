@@ -1,6 +1,6 @@
 # Javier Llorente Portfolio
 
-Este es mi portfolio personal, creado como una primera experiencia práctica usando vibe coding para diseñar, iterar y publicar un sitio propio.
+Este es mi portfolio personal, personalizado a partir de una base inicial, como una primera experiencia práctica usando vibe coding para diseñar, iterar y publicar un sitio propio.
 
 El objetivo de este proyecto fue explorar una forma rápida de pasar de una idea a un producto visible, combinando criterio de producto, herramientas AI y desarrollo frontend.
 
