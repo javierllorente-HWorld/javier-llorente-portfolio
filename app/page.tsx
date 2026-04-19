@@ -86,7 +86,7 @@ export default function Home() {
 
       <SidebarNav activeSection={activeSection} />
 
-      <main className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16">
+      <main className="max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto px-6 sm:px-8 lg:px-16">
         <header
           id="intro"
           ref={(el) => {
