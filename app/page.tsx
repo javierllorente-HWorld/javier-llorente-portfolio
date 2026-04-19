@@ -174,7 +174,7 @@ export default function Home() {
           ref={(el) => {
             sectionsRef.current[1] = el
           }}
-          className="min-h-screen py-12 sm:py-16 opacity-0"
+          className="py-12 sm:py-16 opacity-0"
         >
           <div className="space-y-12 sm:space-y-16">
             <h2 className="text-3xl sm:text-4xl font-light">{t.focus}</h2>
@@ -188,64 +188,6 @@ export default function Home() {
                   {skill}
                 </span>
               ))}
-            </div>
-
-            <div className="space-y-8 pt-12">
-              <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl font-light">{t.tools}</h3>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {t.toolCategories.map((category, index) => (
-                  <div
-                    key={index}
-                    className="space-y-3 p-4 border border-border rounded-lg hover:border-muted-foreground/30 transition-all duration-300"
-                  >
-                    <h4 className="text-base font-medium text-foreground">{category.name}</h4>
-                    <div className="flex flex-wrap gap-1.5">
-                      {category.tools.map((tool) => (
-                        <span
-                          key={tool}
-                          className="px-2 py-1 text-xs text-muted-foreground bg-muted/30 border border-border rounded-md hover:bg-muted/50 hover:text-foreground transition-all duration-300"
-                        >
-                          {tool}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="p-4 border-2 border-dashed border-border rounded-lg bg-muted/20">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-muted-foreground"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                      />
-                    </svg>
-                    <h4 className="text-base font-medium text-foreground">{t.learningTools}</h4>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {t.learningToolsList.map((tool) => (
-                      <span
-                        key={tool}
-                        className="px-2 py-1 text-xs text-foreground bg-background border border-border rounded-md"
-                      >
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -360,53 +302,47 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="tools" ref={(el) => {
+        <section id="work" ref={(el) => {
   sectionsRef.current[3] = el
 }} className="py-12 sm:py-16 opacity-0">
           <div className="space-y-12 sm:space-y-16">
-            <div className="space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-light">{t.eventsTitle}</h2>
-              <p className="text-muted-foreground leading-relaxed max-w-2xl">{t.eventsDescription}</p>
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+              <h2 className="text-3xl sm:text-4xl font-light">{t.selectedWork}</h2>
+              <div className="text-sm text-muted-foreground font-mono">2021 — 2026</div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
-              {t.eventPhotos.map((photo, index) => (
+            <div className="space-y-8 sm:space-y-12 max-h-none overflow-auto">
+              {t.jobs.map((job, index) => (
                 <div
                   key={index}
-                  className="group"
-                  style={{
-                    transform: `rotate(${index % 2 === 0 ? "-2deg" : "2deg"})`,
-                  }}
+                  className="group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
                 >
-                  <div className="bg-white dark:bg-white p-3 pb-12 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:rotate-0">
-                    <div className="aspect-square relative overflow-hidden bg-muted">
-                      <Image
-                        src={
-                          index === 0
-                            ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ETH-EYWKIn7xP0Feij0EVlXBKB8T6yRLwf.jpg"
-                            : index === 1
-                              ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PANDA%202021-rsduEvmhZMo4EULvU3z70RCt6Dj0IH.jpg"
-                              : index === 2
-                                ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1620.PNG-P6GSF7URy12fUQxIoYIWJaY8c5TqZX.png"
-                                : index === 3
-                                  ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VICI%202021.JPG-YCAnfwklSg2GVXcaXgUdIkfw3qOgp5.jpeg"
-                                  : index === 4
-                                    ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Panda%20creando%202023.JPG-GWNBnjD3CNuyvovsV4mkHz6YgXY0Mb.jpeg"
-                                    : index === 5
-                                      ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/USINA%202021.JPG-HH5imtvx5iBj6ScQbYuGEN4VooFHke.jpeg"
-                                      : `/placeholder.svg?height=400&width=400&query=${encodeURIComponent(photo.caption)}`
-                        }
-                        alt={photo.caption}
-                        fill
-                        className="object-cover"
-                      />
+                  <div className="lg:col-span-2">
+                    <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
+                      {job.year}
                     </div>
-                    <div className="mt-3 text-center">
-                      <p className="text-sm text-gray-700 font-mono tracking-wide">
-                        {photo.caption}
-                        {index === 0 && " - 2026"}
-                      </p>
+                  </div>
+
+                  <div className="lg:col-span-10 space-y-3">
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3 lg:gap-8">
+                      <div>
+                        <h3 className="text-lg sm:text-xl font-medium">{job.role}</h3>
+                        <div className="text-muted-foreground">{job.company}</div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 lg:justify-end">
+                        {job.tech.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
+
+                    <p className="text-muted-foreground leading-relaxed max-w-2xl">{job.description}</p>
                   </div>
                 </div>
               ))}
@@ -414,8 +350,76 @@ export default function Home() {
           </div>
         </section>
 
+        <section
+          id="tools"
+          ref={(el) => {
+            sectionsRef.current[4] = el
+          }}
+          className="py-12 sm:py-16 opacity-0"
+        >
+          <div className="space-y-12 sm:space-y-16">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h3 className="text-2xl sm:text-3xl font-light">{t.tools}</h3>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {t.toolCategories.map((category, index) => (
+                  <div
+                    key={index}
+                    className="space-y-3 p-4 border border-border rounded-lg hover:border-muted-foreground/30 transition-all duration-300"
+                  >
+                    <h4 className="text-base font-medium text-foreground">{category.name}</h4>
+                    <div className="flex flex-wrap gap-1.5">
+                      {category.tools.map((tool) => (
+                        <span
+                          key={tool}
+                          className="px-2 py-1 text-xs text-muted-foreground bg-muted/30 border border-border rounded-md hover:bg-muted/50 hover:text-foreground transition-all duration-300"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="p-4 border-2 border-dashed border-border rounded-lg bg-muted/20">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <svg
+                      className="w-5 h-5 text-muted-foreground"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
+                    </svg>
+                    <h4 className="text-base font-medium text-foreground">{t.learningTools}</h4>
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {t.learningToolsList.map((tool) => (
+                      <span
+                        key={tool}
+                        className="px-2 py-1 text-xs text-foreground bg-background border border-border rounded-md"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="recommendations" ref={(el) => {
-  sectionsRef.current[4] = el
+  sectionsRef.current[5] = el
 }} className="py-12 sm:py-16 opacity-0">
           <div className="space-y-16 sm:space-y-20">
             <div className="space-y-8">
@@ -504,47 +508,53 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="work" ref={(el) => {
-  sectionsRef.current[5] = el
+        <section id="events" ref={(el) => {
+  sectionsRef.current[6] = el
 }} className="py-12 sm:py-16 opacity-0">
           <div className="space-y-12 sm:space-y-16">
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-              <h2 className="text-3xl sm:text-4xl font-light">{t.selectedWork}</h2>
-              <div className="text-sm text-muted-foreground font-mono">2021 — 2026</div>
+            <div className="space-y-4">
+              <h2 className="text-3xl sm:text-4xl font-light">{t.eventsTitle}</h2>
+              <p className="text-muted-foreground leading-relaxed max-w-2xl">{t.eventsDescription}</p>
             </div>
 
-            <div className="space-y-8 sm:space-y-12 max-h-none overflow-auto">
-              {t.jobs.map((job, index) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
+              {t.eventPhotos.map((photo, index) => (
                 <div
                   key={index}
-                  className="group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
+                  className="group"
+                  style={{
+                    transform: `rotate(${index % 2 === 0 ? "-2deg" : "2deg"})`,
+                  }}
                 >
-                  <div className="lg:col-span-2">
-                    <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
-                      {job.year}
+                  <div className="bg-white dark:bg-white p-3 pb-12 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:rotate-0">
+                    <div className="aspect-square relative overflow-hidden bg-muted">
+                      <Image
+                        src={
+                          index === 0
+                            ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ETH-EYWKIn7xP0Feij0EVlXBKB8T6yRLwf.jpg"
+                            : index === 1
+                              ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PANDA%202021-rsduEvmhZMo4EULvU3z70RCt6Dj0IH.jpg"
+                              : index === 2
+                                ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1620.PNG-P6GSF7URy12fUQxIoYIWJaY8c5TqZX.png"
+                                : index === 3
+                                  ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VICI%202021.JPG-YCAnfwklSg2GVXcaXgUdIkfw3qOgp5.jpeg"
+                                  : index === 4
+                                    ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Panda%20creando%202023.JPG-GWNBnjD3CNuyvovsV4mkHz6YgXY0Mb.jpeg"
+                                    : index === 5
+                                      ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/USINA%202021.JPG-HH5imtvx5iBj6ScQbYuGEN4VooFHke.jpeg"
+                                      : `/placeholder.svg?height=400&width=400&query=${encodeURIComponent(photo.caption)}`
+                        }
+                        alt={photo.caption}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
-                  </div>
-
-                  <div className="lg:col-span-10 space-y-3">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3 lg:gap-8">
-                      <div>
-                        <h3 className="text-lg sm:text-xl font-medium">{job.role}</h3>
-                        <div className="text-muted-foreground">{job.company}</div>
-                      </div>
-
-                      <div className="flex flex-wrap gap-2 lg:justify-end">
-                        {job.tech.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="mt-3 text-center">
+                      <p className="text-sm text-gray-700 font-mono tracking-wide">
+                        {photo.caption}
+                        {index === 0 && " - 2026"}
+                      </p>
                     </div>
-
-                    <p className="text-muted-foreground leading-relaxed max-w-2xl">{job.description}</p>
                   </div>
                 </div>
               ))}
@@ -553,7 +563,7 @@ export default function Home() {
         </section>
 
         <section id="connect" ref={(el) => {
-  sectionsRef.current[6] = el
+  sectionsRef.current[7] = el
 }} className="py-12 sm:py-16 opacity-0">
           <div className="grid lg:grid-cols-2 gap-12 sm:gap-16">
             <div className="space-y-6 sm:space-y-8">

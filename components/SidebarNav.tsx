@@ -1,7 +1,7 @@
 "use client"
 
 export function SidebarNav({ activeSection }: { activeSection: string }) {
-  const sections = ["intro", "focus", "projects", "tools", "recommendations", "work", "connect"]
+  const sections = ["intro", "focus", "projects", "work", "tools", "recommendations", "events", "connect"]
 
   return (
     <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
