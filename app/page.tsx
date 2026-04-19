@@ -437,19 +437,19 @@ export default function Home() {
                           }`}
                       >
                         <div className="flex min-h-0 flex-1 flex-col">
-                          <div className="mb-4 shrink-0">
+                          <div className="flex shrink-0 items-start gap-4">
                             <Image
                               src={encodeURI(testimonial.image)}
                               alt={testimonial.name}
                               width={72}
                               height={72}
-                              className="h-[72px] w-[72px] rounded-full border border-border/60 object-cover object-top shadow-sm"
+                              className="h-[72px] w-[72px] shrink-0 rounded-full border border-border/60 object-cover object-top shadow-sm"
                               sizes="72px"
                             />
-                          </div>
-                          <div className="space-y-1">
-                            <div className="font-medium text-foreground">{testimonial.name}</div>
-                            <div className="text-xs text-muted-foreground">{testimonial.role}</div>
+                            <div className="min-w-0 flex-1 space-y-1">
+                              <div className="font-medium text-foreground">{testimonial.name}</div>
+                              <div className="text-xs text-muted-foreground leading-snug">{testimonial.role}</div>
+                            </div>
                           </div>
                           <p className="mt-4 border-t border-border/50 pt-4 text-sm text-muted-foreground leading-relaxed italic sm:text-[0.9375rem] lg:leading-[1.65]">
                             "{testimonial.text}"
