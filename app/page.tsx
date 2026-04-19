@@ -5,6 +5,13 @@ import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import { LanguageToggle } from "@/components/language-toggle"
 import { SidebarNav } from "@/components/SidebarNav"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import { translations, type Language } from "@/lib/translations"
 
 const INTRO_EMPHASIS_PHRASES = ["Product Manager", "AI Products", "fintech"] as const
@@ -413,26 +420,41 @@ export default function Home() {
           <div className="space-y-16 sm:space-y-20">
             <div className="space-y-8">
               <h3 className="text-2xl sm:text-3xl font-light">{t.peopleRecommend}</h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {t.testimonials.map((testimonial, index) => (
-                  <div
-                    key={index}
-                    className={`group p-6 border rounded-lg transition-all duration-300 hover:shadow-lg ${index === 2
-                        ? "border-blue-500/30 bg-blue-500/5 hover:border-blue-500/50 hover:bg-blue-500/10"
-                        : "border-border hover:border-muted-foreground/50"
-                      }`}
-                  >
-                    <div className="space-y-4">
-                      <p className="text-sm text-muted-foreground leading-relaxed italic">"{testimonial.text}"</p>
+              <Carousel
+                opts={{ align: "start", loop: false }}
+                className="relative w-full px-11 sm:px-12 md:px-14"
+              >
+                <CarouselContent className="-ml-3 sm:-ml-4">
+                  {t.testimonials.map((testimonial, index) => (
+                    <CarouselItem
+                      key={index}
+                      className="pl-3 sm:pl-4 basis-full sm:basis-1/2 xl:basis-1/3"
+                    >
+                      <div
+                        className={`group h-full p-6 border rounded-lg transition-all duration-300 hover:shadow-lg ${index === 2
+                            ? "border-blue-500/30 bg-blue-500/5 hover:border-blue-500/50 hover:bg-blue-500/10"
+                            : "border-border hover:border-muted-foreground/50"
+                          }`}
+                      >
+                        <div className="space-y-4">
+                          <p className="text-sm text-muted-foreground leading-relaxed italic">"{testimonial.text}"</p>
 
-                      <div className="pt-3 border-t border-border/50">
-                        <div className="font-medium text-foreground">{testimonial.name}</div>
-                        <div className="text-xs text-muted-foreground">{testimonial.role}</div>
+                          <div className="pt-3 border-t border-border/50">
+                            <div className="font-medium text-foreground">{testimonial.name}</div>
+                            <div className="text-xs text-muted-foreground">{testimonial.role}</div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious
+                  className="left-1 top-1/2 z-10 h-9 w-9 -translate-y-1/2 border-border bg-background/90 text-foreground shadow-md backdrop-blur-sm hover:bg-muted/50 hover:text-foreground disabled:opacity-25"
+                />
+                <CarouselNext
+                  className="right-1 top-1/2 z-10 h-9 w-9 -translate-y-1/2 border-border bg-background/90 text-foreground shadow-md backdrop-blur-sm hover:bg-muted/50 hover:text-foreground disabled:opacity-25"
+                />
+              </Carousel>
             </div>
 
             <div className="flex flex-col items-center gap-4 pt-8">

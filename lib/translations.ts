@@ -26,24 +26,24 @@ export const translations = {
     portfolioMetaTitle: "This Portfolio",
     portfolioMetaDescription:
       "This portfolio was designed and built by me as a way to showcase my experience, projects, and approach to building digital products.",
-    tools: "My stack",
+    tools: "Stack",
     toolsDescription: "Technologies and tools I use in my daily work, organized by category.",
     toolCategories: [
       {
-        name: "Product",
+        name: "1. Product",
         tools: ["Jira", "Notion", "Trello"],
       },
       {
-        name: "Data",
+        name: "2. Data",
         tools: ["SQL", "Mixpanel", "Amplitude"],
       },
       {
-        name: "AI",
-        tools: ["ChatGPT", "Claude", "Cursor", "v0"],
+        name: "3. AI",
+        tools: ["ChatGPT", "Claude", "Cursor", "v0", "Lovable"],
       },
       {
-        name: "UX / Research",
-        tools: ["Google Forms", "Figma", "FigJam", "Miro", "Framer", "Figma Maker"],
+        name: "4. UX / Research",
+        tools: ["Google Forms", "FigJam", "Figma Maker", "Miro", "Mural"],
       },
     ],
     learningTools: "Currently Improving",
@@ -250,24 +250,24 @@ export const translations = {
     portfolioMetaTitle: "Este Portfolio",
     portfolioMetaDescription:
       "Este portfolio fue diseñado y desarrollado por mí como una forma de mostrar mi experiencia, proyectos y forma de construir productos digitales.",
-    tools: "Mi stack",
+    tools: "Stack",
     toolsDescription: "Tecnologías y herramientas que utilizo en mi trabajo diario, organizadas por categoría.",
     toolCategories: [
       {
-        name: "Product",
+        name: "1. Product",
         tools: ["Jira", "Notion", "Trello"],
       },
       {
-        name: "Data",
+        name: "2. Data",
         tools: ["SQL", "Mixpanel", "Amplitude"],
       },
       {
-        name: "AI",
-        tools: ["ChatGPT", "Claude", "Cursor", "v0"],
+        name: "3. AI",
+        tools: ["ChatGPT", "Claude", "Cursor", "v0", "Lovable"],
       },
       {
-        name: "UX / Research",
-        tools: ["Google Forms", "Figma", "FigJam", "Miro", "Framer", "Figma Maker"],
+        name: "4. UX / Research",
+        tools: ["Google Forms", "FigJam", "Figma Maker", "Miro", "Mural"],
       },
     ],
     learningTools: "Mejorando Actualmente",
