@@ -7,6 +7,7 @@ export const translations = {
     frontendDeveloper: "Entrepreneur",
     present: "Present",
     focus: "Focus",
+    focusTags: ["Product Strategy", "AI Products", "Fintech", "SQL", "UX"],
     selectedWork: "Professional Experience",
     recentThoughts: "Recent Thoughts",
     readMore: "Read more",
@@ -25,36 +26,28 @@ export const translations = {
     portfolioMetaTitle: "This Portfolio",
     portfolioMetaDescription:
       "This portfolio was designed and built by me as a way to showcase my experience, projects, and approach to building digital products.",
-    tools: "Tools",
+    tools: "My stack",
     toolsDescription: "Technologies and tools I use in my daily work, organized by category.",
     toolCategories: [
       {
-        name: "Discovery & Documentation",
-        tools: ["Notion", "Google Forms"],
+        name: "Product",
+        tools: ["Jira", "Notion", "Trello"],
       },
       {
-        name: "Workshops & Design",
-        tools: ["Miro", "Mural", "FigJam", "Figma", "Framer"],
-      },
-      {
-        name: "Product Management",
-        tools: ["Jira", "Trello", "ClickUp"],
-      },
-      {
-        name: "Communication",
-        tools: ["Slack", "Teams", "Zoom", "Google Meet"],
-      },
-      {
-        name: "Build & Data",
-        tools: ["Bravo Studio", "Bubble", "Excel", "Lovable"],
+        name: "Data",
+        tools: ["SQL", "Mixpanel", "Amplitude"],
       },
       {
         name: "AI",
-        tools: ["GPT", "Gemini", "n8n (basic use)"],
+        tools: ["ChatGPT", "Claude", "Cursor", "v0"],
+      },
+      {
+        name: "UX / Research",
+        tools: ["Google Forms", "Figma", "FigJam", "Miro", "Framer", "Figma Maker"],
       },
     ],
     learningTools: "Currently Improving",
-    learningToolsList: ["Vercel", "Cursor", "SQL"],
+    learningToolsList: ["Cursor", "Claude"],
     eventsTitle: "Moments",
     eventsDescription: "Some snapshots from events and experiences throughout my journey.",
     eventPhotos: [
@@ -238,6 +231,7 @@ export const translations = {
     frontendDeveloper: "Product Manager | AI Products | Fintech",
     present: "Presente",
     focus: "Enfoque",
+    focusTags: ["Product Strategy", "AI Products", "Fintech", "SQL", "UX"],
     selectedWork: "Experiencia Profesional",
     recentThoughts: "Pensamientos Recientes",
     readMore: "Leer más",
@@ -256,36 +250,28 @@ export const translations = {
     portfolioMetaTitle: "Este Portfolio",
     portfolioMetaDescription:
       "Este portfolio fue diseñado y desarrollado por mí como una forma de mostrar mi experiencia, proyectos y forma de construir productos digitales.",
-    tools: "Herramientas",
+    tools: "Mi stack",
     toolsDescription: "Tecnologías y herramientas que utilizo en mi trabajo diario, organizadas por categoría.",
     toolCategories: [
       {
-        name: "Discovery & Documentación",
-        tools: ["Notion", "Google Forms"],
+        name: "Product",
+        tools: ["Jira", "Notion", "Trello"],
       },
       {
-        name: "Workshops & Diseño",
-        tools: ["Miro", "Mural", "FigJam", "Figma", "Framer"],
+        name: "Data",
+        tools: ["SQL", "Mixpanel", "Amplitude"],
       },
       {
-        name: "Gestión de Producto",
-        tools: ["Jira", "Trello", "ClickUp"],
+        name: "AI",
+        tools: ["ChatGPT", "Claude", "Cursor", "v0"],
       },
       {
-        name: "Comunicación",
-        tools: ["Slack", "Teams", "Zoom", "Google Meet"],
-      },
-      {
-        name: "Build & Datos",
-        tools: ["Bravo Studio", "Bubble", "Excel", "Lovable"],
-      },
-      {
-        name: "IA",
-        tools: ["GPT", "Gemini", "n8n (uso básico)"],
+        name: "UX / Research",
+        tools: ["Google Forms", "Figma", "FigJam", "Miro", "Framer", "Figma Maker"],
       },
     ],
     learningTools: "Mejorando Actualmente",
-    learningToolsList: ["Vercel", "Cursor", "SQL"],
+    learningToolsList: ["Cursor", "Claude"],
     eventsTitle: "Momentos",
     eventsDescription: "Algunas instantáneas de eventos y experiencias a lo largo de mi trayectoria.",
     eventPhotos: [

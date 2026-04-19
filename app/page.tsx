@@ -7,7 +7,7 @@ import { LanguageToggle } from "@/components/language-toggle"
 import { SidebarNav } from "@/components/SidebarNav"
 import { translations, type Language } from "@/lib/translations"
 
-const INTRO_EMPHASIS_PHRASES = ["AI Products", "fintech"] as const
+const INTRO_EMPHASIS_PHRASES = ["Product Manager", "AI Products", "fintech"] as const
 
 function renderIntroWithEmphasis(text: string) {
   const pattern = INTRO_EMPHASIS_PHRASES.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")
@@ -173,7 +173,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-light">{t.focus}</h2>
 
             <div className="flex flex-wrap gap-3">
-              {["Product", "SQL", "No-Code", "IT", "UX", "Emprendedurismo"].map((skill) => (
+              {t.focusTags.map((skill) => (
                 <span
                   key={skill}
                   className="px-4 py-2 text-sm border border-border rounded-full hover:border-muted-foreground/50 hover:bg-muted/20 transition-all duration-300"
