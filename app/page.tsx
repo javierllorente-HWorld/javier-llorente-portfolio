@@ -7,6 +7,22 @@ import { LanguageToggle } from "@/components/language-toggle"
 import { SidebarNav } from "@/components/SidebarNav"
 import { translations, type Language } from "@/lib/translations"
 
+const INTRO_EMPHASIS_PHRASES = ["AI Products", "fintech"] as const
+
+function renderIntroWithEmphasis(text: string) {
+  const pattern = INTRO_EMPHASIS_PHRASES.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")
+  const re = new RegExp(`(${pattern})`, "g")
+  return text.split(re).map((part, i) =>
+    (INTRO_EMPHASIS_PHRASES as readonly string[]).includes(part) ? (
+      <strong key={i} className="text-foreground font-bold">
+        {part}
+      </strong>
+    ) : (
+      part
+    ),
+  )
+}
+
 export default function Home() {
   const [isDark, setIsDark] = useState(true)
   const [activeSection, setActiveSection] = useState("")
@@ -83,7 +99,9 @@ export default function Home() {
                 </h1>
 
                 <div className="space-y-6 max-w-md">
-                  <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">{t.intro}</p>
+                  <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                    {renderIntroWithEmphasis(t.intro)}
+                  </p>
 
                   <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
