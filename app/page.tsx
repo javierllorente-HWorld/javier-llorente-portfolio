@@ -436,15 +436,14 @@ export default function Home() {
                             : "border-border hover:border-muted-foreground/50"
                           }`}
                       >
-                        <div className="flex min-h-0 flex-1 flex-col gap-4">
-                          <p className="text-sm text-muted-foreground leading-relaxed italic sm:text-[0.9375rem] lg:leading-[1.65]">
-                            "{testimonial.text}"
-                          </p>
-
-                          <div className="mt-auto border-t border-border/50 pt-3">
+                        <div className="flex min-h-0 flex-1 flex-col">
+                          <div className="space-y-1">
                             <div className="font-medium text-foreground">{testimonial.name}</div>
                             <div className="text-xs text-muted-foreground">{testimonial.role}</div>
                           </div>
+                          <p className="mt-4 border-t border-border/50 pt-4 text-sm text-muted-foreground leading-relaxed italic sm:text-[0.9375rem] lg:leading-[1.65]">
+                            "{testimonial.text}"
+                          </p>
                         </div>
                       </div>
                     </CarouselItem>
