@@ -116,7 +116,7 @@ export default function Home() {
                   <div className="text-sm text-muted-foreground font-mono">{t.currently}</div>
                   <div className="space-y-2">
                     <div className="text-foreground">{t.jobs[0].role}</div>
-                    <div className="text-muted-foreground">@ START Fellowship</div>
+                    <div className="text-muted-foreground">@ Mateo - Fintech</div>
                     <div className="text-xs text-muted-foreground">2026 — {t.present}</div>
                   </div>
                 </div>
@@ -464,7 +464,7 @@ export default function Home() {
           <div className="space-y-12 sm:space-y-16">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <h2 className="text-3xl sm:text-4xl font-light">{t.selectedWork}</h2>
-              <div className="text-sm text-muted-foreground font-mono">2021 — 2025</div>
+              <div className="text-sm text-muted-foreground font-mono">2021 — 2026</div>
             </div>
 
             <div className="space-y-8 sm:space-y-12 max-h-none overflow-auto">
