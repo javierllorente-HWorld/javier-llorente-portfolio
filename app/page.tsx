@@ -83,12 +83,7 @@ export default function Home() {
                 </h1>
 
                 <div className="space-y-6 max-w-md">
-                  <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                    {t.intro}
-                    <span className="text-foreground"> {t.design}</span>,
-                    <span className="text-foreground"> {t.technology}</span>,{language === "es" ? " y " : " and "}
-                    <span className="text-foreground"> {t.userExperience}</span>.
-                  </p>
+                  <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">{t.intro}</p>
 
                   <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
