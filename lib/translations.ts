@@ -232,11 +232,11 @@ export const translations = {
     ],
   },
   es: {
-    portfolio: "PORTAFOLIO",
+    portfolio: "PORTFOLIO",
     availableForWork: "Disponible para trabajar",
     location: "Buenos Aires, Argentina",
     currently: "ACTUALMENTE",
-    frontendDeveloper: "Emprendedor",
+    frontendDeveloper: "Product Manager | AI Products | Fintech",
     present: "Presente",
     focus: "Enfoque",
     selectedWork: "Experiencia Profesional",
