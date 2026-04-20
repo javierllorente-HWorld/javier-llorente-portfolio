@@ -228,7 +228,7 @@ export default function Home() {
 }} className="py-12 sm:py-16 opacity-0">
           <div className="space-y-8">
             <div className="space-y-2">
-              <h2 className="text-2xl sm:text-3xl font-light">{t.featuredProjects}</h2>
+              <h2 className="text-3xl sm:text-4xl font-light">{t.featuredProjects}</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -392,7 +392,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-3 sm:space-y-4">
                 <div className="inline-flex flex-col gap-2">
-                  <h3 className="text-2xl sm:text-3xl font-light">{t.tools}</h3>
+                  <h3 className="text-3xl sm:text-4xl font-light">{t.tools}</h3>
                   <div className="h-px w-12 bg-gradient-to-r from-muted-foreground/50 via-muted-foreground/25 to-transparent" />
                 </div>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
@@ -508,7 +508,7 @@ export default function Home() {
 }} className="py-12 sm:py-16 opacity-0">
           <div className="space-y-16 sm:space-y-20">
             <div className="space-y-8">
-              <h3 className="text-2xl sm:text-3xl font-light">{t.peopleRecommend}</h3>
+              <h3 className="text-3xl sm:text-4xl font-light">{t.peopleRecommend}</h3>
               <Carousel
                 opts={{ align: "start", loop: false }}
                 className="relative w-full px-11 sm:px-12 md:px-14"
@@ -563,32 +563,64 @@ export default function Home() {
                   ? "¿Quieres conocer más sobre mi trabajo y recomendaciones?"
                   : "Want to learn more about my work and recommendations?"}
               </p>
-              <Link
-                href="https://www.linkedin.com/in/javier-llorente-/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-6 py-3 border-2 border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white rounded-lg transition-all duration-300 hover:shadow-lg"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-                <span className="font-medium">
-                  {language === "es" ? "Ver más recomendaciones en LinkedIn" : "View more recommendations on LinkedIn"}
-                </span>
-                <svg
-                  className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <div className="flex flex-col sm:flex-row items-center gap-3">
+                <Link
+                  href="https://www.linkedin.com/in/javier-llorente-/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-3 px-6 py-3 border-2 border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white rounded-lg transition-all duration-300 hover:shadow-lg"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </Link>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                  <span className="font-medium">
+                    {language === "es" ? "Ver más recomendaciones en LinkedIn" : "View more recommendations on LinkedIn"}
+                  </span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+
+                <Link
+                  href="https://github.com/javierllorente-HWorld"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-3 px-6 py-3 border-2 border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white rounded-lg transition-all duration-300 hover:shadow-lg"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M12 .5C5.648.5.5 5.792.5 12.329c0 5.233 3.292 9.674 7.86 11.24.575.11.785-.257.785-.571 0-.282-.01-1.03-.015-2.022-3.197.714-3.872-1.586-3.872-1.586-.523-1.37-1.277-1.735-1.277-1.735-1.043-.736.08-.72.08-.72 1.153.083 1.76 1.22 1.76 1.22 1.025 1.806 2.69 1.284 3.344.982.104-.767.401-1.284.73-1.58-2.552-.298-5.236-1.312-5.236-5.842 0-1.29.448-2.344 1.183-3.17-.118-.3-.513-1.507.113-3.143 0 0 .965-.318 3.162 1.21.917-.262 1.902-.394 2.88-.399.978.005 1.963.137 2.882.399 2.196-1.528 3.16-1.21 3.16-1.21.627 1.636.232 2.843.114 3.143.736.826 1.182 1.88 1.182 3.17 0 4.541-2.689 5.54-5.25 5.833.413.366.782 1.09.782 2.197 0 1.586-.014 2.864-.014 3.254 0 .317.207.687.79.57 4.564-1.569 7.851-6.006 7.851-11.237C23.5 5.792 18.352.5 12 .5Z"
+                    />
+                  </svg>
+                  <span className="font-medium">Ver más sobre mi trabajo en GitHub</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -691,6 +723,20 @@ export default function Home() {
                       LinkedIn
                     </div>
                     <div className="text-sm text-muted-foreground">javierllorente</div>
+                  </div>
+                </Link>
+
+                <Link
+                  href="https://github.com/javierllorente-HWorld"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm"
+                >
+                  <div className="space-y-2">
+                    <div className="text-foreground group-hover:text-muted-foreground transition-colors duration-300">
+                      GitHub
+                    </div>
+                    <div className="text-sm text-muted-foreground">Javi Llorente</div>
                   </div>
                 </Link>
               </div>
