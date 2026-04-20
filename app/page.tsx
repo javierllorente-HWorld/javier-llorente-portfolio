@@ -16,6 +16,17 @@ import { translations, type Language } from "@/lib/translations"
 
 const INTRO_EMPHASIS_PHRASES = ["Product Manager", "AI Products", "fintech"] as const
 
+const RELATED_WORK_URLS: Partial<Record<string, string>> = {
+  "Panda Labs":
+    "https://docs.google.com/presentation/d/1qCxXXFvT8RzqhtaQ6KuHRXqeVgoHm69TMH8MOgCD0F8/edit?slide=id.gcb9a0b074_1_0#slide=id.gcb9a0b074_1_0",
+  VICI: "https://miro.com/app/board/uXjVOJPUJLA=/?share_link_id=933053930541",
+  Novolabs:
+    "https://www.figma.com/board/3QCtvuXRPbInzcP1CMZOeW/NovoLabs---Javi?node-id=0-1&p=f&t=vs8jfzHoRiaQhVHi-0",
+  "Multiply Sales & Multiply College":
+    "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=j6wVgcYGvqVHMgn3-0",
+  "Mateo / Self Employed": "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
+}
+
 function renderIntroWithEmphasis(text: string) {
   const pattern = INTRO_EMPHASIS_PHRASES.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")
   const re = new RegExp(`(${pattern})`, "g")
@@ -344,7 +355,10 @@ export default function Home() {
 
             <div className="relative pl-6 space-y-8 sm:space-y-12 max-h-none overflow-auto">
               <div className="pointer-events-none absolute left-[11px] top-2 bottom-2 w-px bg-blue-500/25" />
-              {t.jobs.map((job, index) => (
+              {t.jobs.map((job, index) => {
+                const relatedWorkHref = RELATED_WORK_URLS[job.company] ?? "#"
+                const isExternalRelatedWork = relatedWorkHref !== "#"
+                return (
                 <div
                   key={index}
                   className="group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
@@ -368,26 +382,30 @@ export default function Home() {
 
                     <p className="text-muted-foreground leading-relaxed max-w-2xl">{job.description}</p>
 
-                    <div className="flex flex-wrap gap-2">
-                      {job.tech.map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-2 py-1 text-xs text-muted-foreground bg-muted/20 border border-border/60 rounded-full"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <div className="flex flex-wrap gap-2">
+                        {job.tech.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-2 py-1 text-xs text-muted-foreground bg-muted/20 border border-border/60 rounded-full"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
 
-                    <Link
-                      href="#"
-                      className="inline-flex text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
-                    >
-                      Related work →
-                    </Link>
+                      <Link
+                        href={relatedWorkHref}
+                        {...(isExternalRelatedWork ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                        className="ml-auto inline-flex text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                      >
+                        {language === "es" ? "Ver material →" : "Related work →"}
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              ))}
+                )
+              })}
             </div>
           </div>
         </section>
