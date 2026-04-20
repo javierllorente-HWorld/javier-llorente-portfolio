@@ -119,18 +119,10 @@ export const translations = {
     ],
     projects: [
       {
-        title: "SCRUM & KANBAN - Multiply",
-        description:
-          "Applied Scrum and Kanban to improve team coordination, backlog prioritization, and sprint execution across multiple products.",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
-        tech: ["Scrum", "Kanban", "Product Management", "Backlog Management"],
-        link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
-      },
-      {
         title: "AI Product - Mateo Fintech",
         description:
           "On GitHub you can explore the public repository, the demo, core features, and how it was built with AI tools, SQL, and Neon integration.",
-        image: "/icon.svg",
+        image: "/images/projects/Dashboard%20de%20Mateo.png",
         tech: ["Cursor", "V0", "Fintech", "AI Product"],
         link: "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
       },
@@ -141,6 +133,14 @@ export const translations = {
         image: "/icon.svg",
         tech: ["Cursor", "V0", "GitHub", "AI tools"],
         link: "https://github.com/javierllorente-HWorld/v0-javier-llorente-porfolio",
+      },
+      {
+        title: "SCRUM & KANBAN - Multiply",
+        description:
+          "Applied Scrum and Kanban to improve team coordination, backlog prioritization, and sprint execution across multiple products.",
+        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
+        tech: ["Scrum", "Kanban", "Product Management", "Backlog Management"],
+        link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
       },
     ],
     posts: [
@@ -329,18 +329,10 @@ export const translations = {
     ],
     projects: [
       {
-        title: "SCRUM & KANBAN - Multiply",
-        description:
-          "Apliqué Scrum y Kanban para mejorar la coordinación de equipos, la priorización del backlog y la ejecución de sprints en múltiples productos.",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
-        tech: ["Scrum", "Kanban", "Product Management", "Gestión de Backlog"],
-        link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
-      },
-      {
         title: "AI Product - Mateo Fintech",
         description:
           "En mi GitHub se puede ver el repositorio público, la demo, las funcionalidades principales y el proceso de construcción con AI tools, SQL e integración con Neon.",
-        image: "/icon.svg",
+        image: "/images/projects/Dashboard%20de%20Mateo.png",
         tech: ["Cursor", "V0", "Fintech", "AI Product"],
         link: "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
       },
@@ -351,6 +343,14 @@ export const translations = {
         image: "/icon.svg",
         tech: ["Cursor", "V0", "GitHub", "AI tools"],
         link: "https://github.com/javierllorente-HWorld/v0-javier-llorente-porfolio",
+      },
+      {
+        title: "SCRUM & KANBAN - Multiply",
+        description:
+          "Apliqué Scrum y Kanban para mejorar la coordinación de equipos, la priorización del backlog y la ejecución de sprints en múltiples productos.",
+        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
+        tech: ["Scrum", "Kanban", "Product Management", "Gestión de Backlog"],
+        link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
       },
     ],
     posts: [

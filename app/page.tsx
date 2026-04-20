@@ -252,8 +252,7 @@ export default function Home() {
               {t.projects.map((project, index) => (
                 <div
                   key={index}
-                  className={`group relative overflow-hidden border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-md ${index === 0 ? "bg-blue-500/5 border-blue-500/30 hover:border-blue-500/50" : ""
-                    }`}
+                  className="group relative overflow-hidden border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-md"
                 >
                   <div className="aspect-video relative overflow-hidden bg-muted">
                     <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
