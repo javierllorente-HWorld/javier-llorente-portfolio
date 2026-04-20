@@ -29,6 +29,7 @@ export const translations = {
       "This portfolio was designed and built by me as a way to showcase my experience, projects, and approach to building digital products.",
     tools: "Stack",
     toolsDescription: "Technologies and tools I use in my daily work, organized by category.",
+    stackDescription: "Tools I use to build, analyze, and prototype products.",
     toolCategories: [
       {
         name: "1. Product",
@@ -254,6 +255,7 @@ export const translations = {
       "Este portfolio fue diseñado y desarrollado por mí como una forma de mostrar mi experiencia, proyectos y forma de construir productos digitales.",
     tools: "Stack",
     toolsDescription: "Tecnologías y herramientas que utilizo en mi trabajo diario, organizadas por categoría.",
+    stackDescription: "Herramientas que uso para construir, analizar y prototipar producto.",
     toolCategories: [
       {
         name: "1. Product",

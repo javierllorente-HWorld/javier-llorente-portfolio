@@ -392,38 +392,35 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-2xl sm:text-3xl font-light">{t.tools}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
+                  {t.stackDescription}
+                </p>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {t.toolCategories.map((category, index) => (
-                  <div
-                    key={index}
-                    className="space-y-3 p-4 border border-border rounded-lg hover:border-muted-foreground/30 transition-all duration-300"
-                  >
-                    <h4 className="text-base font-medium text-foreground">{category.name}</h4>
-                    <div className="flex flex-wrap gap-1.5">
-                      {category.tools.map((tool) => (
-                        <span
-                          key={tool}
-                          className="px-2 py-1 text-xs text-muted-foreground bg-muted/30 border border-border rounded-md hover:bg-muted/50 hover:text-foreground transition-all duration-300"
-                        >
-                          {tool}
-                        </span>
-                      ))}
+              <div className="border border-border rounded-lg bg-muted/10 overflow-hidden">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border">
+                  {t.toolCategories.map((category, index) => (
+                    <div key={index} className="p-4 sm:p-5 space-y-3">
+                      <h4 className="text-sm font-medium text-foreground tracking-wide">{category.name}</h4>
+                      <div className="flex flex-wrap gap-1.5">
+                        {category.tools.map((tool) => (
+                          <span
+                            key={tool}
+                            className="px-2 py-1 text-xs text-muted-foreground bg-muted/20 border border-border/70 rounded-md hover:bg-muted/30 hover:text-foreground transition-colors duration-300"
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
 
-              <div className="p-4 border-2 border-dashed border-border rounded-lg bg-muted/20">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <svg
-                      className="w-5 h-5 text-muted-foreground"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+              <div className="border border-border/70 rounded-lg bg-muted/5 px-4 py-3">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -431,13 +428,14 @@ export default function Home() {
                         d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                       />
                     </svg>
-                    <h4 className="text-base font-medium text-foreground">{t.learningTools}</h4>
+                    <h4 className="text-sm font-medium text-foreground/90">{t.learningTools}</h4>
                   </div>
+
                   <div className="flex flex-wrap gap-1.5">
                     {t.learningToolsList.map((tool) => (
                       <span
                         key={tool}
-                        className="px-2 py-1 text-xs text-foreground bg-background border border-border rounded-md"
+                        className="px-2 py-1 text-xs text-muted-foreground bg-background/40 border border-border/70 rounded-md"
                       >
                         {tool}
                       </span>
