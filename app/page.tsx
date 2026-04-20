@@ -27,6 +27,12 @@ const RELATED_WORK_URLS: Partial<Record<string, string>> = {
   "Mateo / Self Employed": "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
 }
 
+const RELATED_WORK_LINK_HIDDEN_COMPANIES = new Set([
+  "CoderHouse",
+  "Customer service en inglés / Supermercado retail",
+  "Atención al cliente en inglés / Supermercado retail",
+])
+
 function renderIntroWithEmphasis(text: string) {
   const pattern = INTRO_EMPHASIS_PHRASES.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")
   const re = new RegExp(`(${pattern})`, "g")
@@ -356,6 +362,7 @@ export default function Home() {
             <div className="relative pl-6 space-y-8 sm:space-y-12 max-h-none overflow-auto">
               <div className="pointer-events-none absolute left-[11px] top-2 bottom-2 w-px bg-blue-500/25" />
               {t.jobs.map((job, index) => {
+                const showRelatedWorkLink = !RELATED_WORK_LINK_HIDDEN_COMPANIES.has(job.company)
                 const relatedWorkHref = RELATED_WORK_URLS[job.company] ?? "#"
                 const isExternalRelatedWork = relatedWorkHref !== "#"
                 return (
@@ -394,13 +401,15 @@ export default function Home() {
                         ))}
                       </div>
 
-                      <Link
-                        href={relatedWorkHref}
-                        {...(isExternalRelatedWork ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                        className="ml-auto inline-flex text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
-                      >
-                        {language === "es" ? "Ver material →" : "Related work →"}
-                      </Link>
+                      {showRelatedWorkLink && (
+                        <Link
+                          href={relatedWorkHref}
+                          {...(isExternalRelatedWork ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                          className="ml-auto inline-flex text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                        >
+                          {language === "es" ? "Ver material →" : "Related work →"}
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>

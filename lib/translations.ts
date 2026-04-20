@@ -288,7 +288,7 @@ export const translations = {
     ],
     jobs: [
       {
-        year: "2026 - Present",
+        year: "2026 - Presente",
         role: "Product Manager / AI Fintech Side Project",
         company: "Mateo / Self Employed",
         description: "Lidero el desarrollo de MATEO, un fintech SaaS para pymes de LATAM, usando IA para prototipar más rápido, mejorar la UI y construir una versión funcional conectada a base de datos.",
@@ -351,38 +351,6 @@ export const translations = {
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
         tech: ["Scrum", "Kanban", "Product Management", "Jira", "Agile Leadership"],
         link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
-      },
-      {
-        title: "Producto y Go-to-market strategy - Novolabs",
-        description:
-          "Tablero integral de producto y go-to-market de NovoLabs: incluye benchmark de precios/valor, Lean Canvas y roadmap, copys y funnels (landings y promos), organización (Gantt, mentorías, seguimiento), versión final del producto, roles/ownership y plan de marketing con costos operativos.",
-        image: "/images/projects/novolabs-product-board.png",
-        tech: ["Pricing Strategy", "Project Management (Gantt)", "Go-to-Market"],
-        link: "https://www.figma.com/board/3QCtvuXRPbInzcP1CMZOeW/NovoLabs---Javi?node-id=0-1&t=8YYTWVwaLtFEHHMu-1",
-      },
-      {
-        title: "Discovery & UX Strategy - PANDA Labs",
-        description:
-          "Exploración end-to-end: research cuantitativo (n=658), arquetipos/POV, FODA, TAM/SAM/SOM, benchmark competitivo y propuesta de valor; definición de MVP (funcionalidades, historias), IA/UX flows, UI inicial, Business Model Canvas, pricing y plan PESO. Entregables listos para decisión y roadmap.",
-        image: "/images/projects/panda-labs-research.png",
-        tech: ["User Research", "UX Strategy", "Business Model Canvas"],
-        link: "https://docs.google.com/presentation/d/1qCxXXFvT8RzqhtaQ6KuHRXqeVgoHm69TMH8MOgCD0F8/edit?usp=sharing",
-      },
-      {
-        title: "Desarrollo de app con No-Code – PANDA Labs",
-        description:
-          "Diseñé y lancé una app funcional para Android e iOS usando Bravo Studio y Airtable como base de datos. El trabajo cubrió todo el ciclo: arquitectura y wireframes, priorización de funcionalidades, construcción de MVP, tests con usuarios y QA, e integraciones de datos para una app lista para uso real.",
-        image: "/images/projects/panda-labs-app-mockup.png",
-        tech: ["No-Code", "Figma", "Product Strategy", "MVP", "Prototyping"],
-        link: "https://drive.google.com/file/d/1xAERLSjE9MSXXo1bhUMw7t2UVezUB9my/view?usp=sharing",
-      },
-      {
-        title: "Mapa integral de Journey, Operación y Oportunidades – VICI",
-        description:
-          "Registro hecho para la startup VICI, (A) blueprint de servicio con notificaciones, (B) blueprint operativo interno, (C) benchmark del journey de la competencia y (D) mapa de oportunidades y soluciones.",
-        image: "/images/projects/vici-service-blueprint.png",
-        tech: ["Service Blueprinting", "UX Benchmarking", "Pensamiento Sistémico"],
-        link: "https://miro.com/app/board/uXjVOJPUJLA=/?share_link_id=933053930541",
       },
     ],
     posts: [
