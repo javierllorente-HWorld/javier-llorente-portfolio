@@ -342,15 +342,19 @@ export default function Home() {
               <div className="text-sm text-muted-foreground font-mono">2021 — 2026</div>
             </div>
 
-            <div className="space-y-8 sm:space-y-12 max-h-none overflow-auto">
+            <div className="relative pl-6 space-y-8 sm:space-y-12 max-h-none overflow-auto">
+              <div className="pointer-events-none absolute left-[11px] top-2 bottom-2 w-px bg-blue-500/25" />
               {t.jobs.map((job, index) => (
                 <div
                   key={index}
                   className="group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
                 >
                   <div className="lg:col-span-2">
-                    <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
-                      {job.year}
+                    <div className="flex items-start gap-3">
+                      <span className="mt-2 h-2 w-2 rounded-full bg-blue-500 ring-4 ring-background" aria-hidden="true" />
+                      <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
+                        {job.year}
+                      </div>
                     </div>
                   </div>
 
@@ -360,20 +364,20 @@ export default function Home() {
                         <h3 className="text-lg sm:text-xl font-medium">{job.role}</h3>
                         <div className="text-muted-foreground">{job.company}</div>
                       </div>
-
-                      <div className="flex flex-wrap gap-2 lg:justify-end">
-                        {job.tech.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
                     </div>
 
                     <p className="text-muted-foreground leading-relaxed max-w-2xl">{job.description}</p>
+
+                    <div className="flex flex-wrap gap-2">
+                      {job.tech.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
