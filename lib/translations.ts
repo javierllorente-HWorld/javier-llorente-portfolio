@@ -2,9 +2,9 @@ export const translations = {
   en: {
     portfolio: "PORTFOLIO",
     availableForWork: "Available for work",
-    location: "Buenos Aires, Argentina",
+    location: "· Buenos Aires, Argentina",
     currently: "CURRENTLY",
-    frontendDeveloper: "Entrepreneur",
+    frontendDeveloper: "AI Fintech Product Manager",
     present: "Present",
     focus: "Focus",
     focusTags: ["Product Strategy", "AI Products", "Fintech", "SQL", "UX"],
@@ -226,9 +226,9 @@ export const translations = {
   es: {
     portfolio: "PORTFOLIO",
     availableForWork: "Disponible para trabajar",
-    location: "Buenos Aires, Argentina",
+    location: "· Buenos Aires, Argentina",
     currently: "ACTUALMENTE",
-    frontendDeveloper: "Product Manager | AI Products | Fintech",
+    frontendDeveloper: "AI Fintech Product Manager",
     present: "Presente",
     focus: "Enfoque",
     focusTags: ["Product Strategy", "AI Products", "Fintech", "SQL", "UX"],
