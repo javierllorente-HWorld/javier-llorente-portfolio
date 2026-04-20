@@ -61,11 +61,11 @@ export const translations = {
     ],
     jobs: [
       {
-        year: "2025",
-        role: "Entrepreneur",
-        company: "START Fellowship",
-        description: "Entrepreneuring with a personal project in a Swiss incubator, online program in English.",
-        tech: ["User Research", "Entrepreneurship"],
+        year: "2026",
+        role: "Product Manager / AI Fintech Side Project",
+        company: "Mateo / Self Employed",
+        description: "I lead the development of MATEO, a fintech SaaS for LATAM SMBs, using AI to prototype faster, improve the UI, and build a functional version connected to a database.",
+        tech: ["Fintech", "Artificial Intelligence"],
       },
       {
         year: "2024",
@@ -286,11 +286,11 @@ export const translations = {
     ],
     jobs: [
       {
-        year: "2025",
-        role: "Emprendedor",
-        company: "START Fellowship",
-        description: "Emprendiendo con un proyecto personal en una incubadora de Suiza, programa online en inglés.",
-        tech: ["Investigación de usuarios", "Emprendedurismo"],
+        year: "2026",
+        role: "Product Manager / AI Fintech Side Project",
+        company: "Mateo / Self Employed",
+        description: "Lidero el desarrollo de MATEO, un fintech SaaS para pymes de LATAM, usando IA para prototipar más rápido, mejorar la UI y construir una versión funcional conectada a base de datos.",
+        tech: ["Fintech", "Inteligencia artificial"],
       },
       {
         year: "2024",
