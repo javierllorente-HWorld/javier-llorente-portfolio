@@ -48,8 +48,8 @@ export const translations = {
     ],
     learningTools: "Currently Improving",
     learningToolsList: ["Cursor", "Claude"],
-    eventsTitle: "Moments",
-    eventsDescription: "Some snapshots from events and experiences throughout my journey.",
+    eventsTitle: "More about me",
+    eventsDescription: "I strongly identify with the entrepreneurial side of things. I grew and developed in startup environments, surrounded by people with a similar mindset, across projects, events, and hackathons. I value continuous learning, adaptability, and in my free time, training.",
     eventPhotos: [
       { caption: "ETH - Dublin, Ireland with my former business partner" },
       { caption: "Panda team at Endeavor 2021" },
@@ -272,8 +272,8 @@ export const translations = {
     ],
     learningTools: "Mejorando Actualmente",
     learningToolsList: ["Cursor", "Claude"],
-    eventsTitle: "Momentos",
-    eventsDescription: "Algunas instantáneas de eventos y experiencias a lo largo de mi trayectoria.",
+    eventsTitle: "Más sobre mí",
+    eventsDescription: "Me identifico mucho con el lado emprendedor. Crecí y me desarrollé en startups, rodeado de personas con una mentalidad parecida, entre proyectos, eventos y hackatones. Valoro mucho el aprendizaje constante, la adaptabilidad y, en mi tiempo libre, entrenar.",
     eventPhotos: [
       { caption: "ETH - Dublin, Irlanda con mi Ex-socia" },
       { caption: "Presencia del equipo de Panda en Endeavor 2021" },
