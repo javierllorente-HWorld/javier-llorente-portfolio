@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Javier Llorente | Portfolio",
   description:
     "Product Owner y emprendedor enfocado en productos digitales, experiencia de usuario y estrategia.",
+  icons: {
+    icon: "/icon.svg",
+  },
 }
 
 export default function RootLayout({

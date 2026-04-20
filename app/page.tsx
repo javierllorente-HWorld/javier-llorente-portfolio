@@ -595,7 +595,7 @@ export default function Home() {
                   href="https://github.com/javierllorente-HWorld"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-3 px-6 py-3 border-2 border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white rounded-lg transition-all duration-300 hover:shadow-lg"
+                  className="group inline-flex items-center gap-3 px-6 py-3 border-2 border-border text-foreground hover:bg-muted/40 hover:border-muted-foreground/60 rounded-lg transition-all duration-300 hover:shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
@@ -604,7 +604,9 @@ export default function Home() {
                       d="M12 .5C5.648.5.5 5.792.5 12.329c0 5.233 3.292 9.674 7.86 11.24.575.11.785-.257.785-.571 0-.282-.01-1.03-.015-2.022-3.197.714-3.872-1.586-3.872-1.586-.523-1.37-1.277-1.735-1.277-1.735-1.043-.736.08-.72.08-.72 1.153.083 1.76 1.22 1.76 1.22 1.025 1.806 2.69 1.284 3.344.982.104-.767.401-1.284.73-1.58-2.552-.298-5.236-1.312-5.236-5.842 0-1.29.448-2.344 1.183-3.17-.118-.3-.513-1.507.113-3.143 0 0 .965-.318 3.162 1.21.917-.262 1.902-.394 2.88-.399.978.005 1.963.137 2.882.399 2.196-1.528 3.16-1.21 3.16-1.21.627 1.636.232 2.843.114 3.143.736.826 1.182 1.88 1.182 3.17 0 4.541-2.689 5.54-5.25 5.833.413.366.782 1.09.782 2.197 0 1.586-.014 2.864-.014 3.254 0 .317.207.687.79.57 4.564-1.569 7.851-6.006 7.851-11.237C23.5 5.792 18.352.5 12 .5Z"
                     />
                   </svg>
-                  <span className="font-medium">Ver más sobre mi trabajo en GitHub</span>
+                  <span className="font-medium">
+                    {language === "es" ? "Ver más sobre mi trabajo en GitHub" : "See more of my work on GitHub"}
+                  </span>
                   <svg
                     className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"
