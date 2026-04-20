@@ -70,26 +70,26 @@ export const translations = {
       {
         year: "2024",
         role: "Professional Growth",
-        company: "Gastronomy Sector",
+        company: "Customer service en inglés / Supermercado retail",
         description:
           "After working several years as a Product Manager, I realized that for the role and to perform in the IT world, English was very valuable, as it was a tool that provided very good opportunities in addition to opening doors to new markets and having access to new information by consulting many of the official sources in English. After nearly 1 year living and working in Europe, I reached a B2 English level and decided to return to Argentina to take on product positions again, but this time with a new skill.",
         tech: ["Resilience", "Adaptability", "English"],
       },
       {
         year: "2023",
-        role: "Product Owner",
-        company: "Multiply Sales",
+        role: "Product Owner & Scrum Master",
+        company: "Multiply Sales & Multiply College",
         description:
           "In charge of 2 internal software and 1 external, leading the IT department with the CTO, daily management and backlog prioritization, team leader of 2 developers and 1 designer, Tester and bug reporting, among others.",
-        tech: ["EOS", "Backlog Management", "Jira"],
+        tech: ["EOS & Scrum", "Backlog Management", "Jira"],
       },
       {
         year: "2023",
-        role: "CNO",
+        role: "Product Manager (CNO)",
         company: "Novolabs",
         description:
           "In charge of supporting entrepreneurs in creating their MVPs, and the steps prior to generating a product, such as defining the business model, understanding their user/client, among others.",
-        tech: ["Entrepreneurship", "Startups", "MVP"],
+        tech: ["Product Strategy", "Product Discovery", "MVP"],
       },
       {
         year: "2022",
@@ -104,7 +104,7 @@ export const translations = {
         role: "Product Manager Mentor",
         company: "CoderHouse",
         description:
-          "Responsible for the progress of 22 students, all adult professionals from the IT area, in charge of correcting all practical assignments, accompanying the course progress and providing support when necessary.",
+          "Mentored 22 Product Management students, helping unblock questions and providing feedback on 186+ submissions, achieving a 4.8/5 rating and 93.25% satisfaction.",
         tech: ["Agile Methodologies", "Teaching"],
       },
       {
@@ -113,7 +113,7 @@ export const translations = {
         company: "Panda Labs",
         description:
           "Development from idea and concept to the first functional product, available for download on Android and testing environments on iOS, leading a team of 3 people, developing with no-code technologies, Airtable, Firebase and BravoStudio.",
-        tech: ["No-Code", "User Stories", "Prototyping", "UX"],
+        tech: ["Product Manager", "Team Leadership", "Prototyping", "UX"],
       },
     ],
     projects: [
@@ -295,26 +295,26 @@ export const translations = {
       {
         year: "2024",
         role: "Crecimiento profesional",
-        company: "Rubro gastronómico",
+        company: "Atención al cliente en inglés / Supermercado retail",
         description:
           "Luego de trabajar algunos años como Product Manager, me di cuenta que para el rol y para desempeñarme en el mundo de IT era muy valioso tener inglés, ya que era una herramienta que te brindaba muy buenas posibilidades además de abrirte puertas a nuevos mercados y tener acceso a nueva información consultando muchas de las fuentes oficiales en inglés. Luego de cerca de 1 año viviendo y trabajando en Europa, llegué a un nivel de inglés B2 y decidí volver a Argentina para tomar nuevamente puestos en producto, pero esta vez con una nueva habilidad.",
         tech: ["Resiliencia", "Adaptabilidad", "Inglés"],
       },
       {
         year: "2023",
-        role: "Product Owner",
-        company: "Multiply Sales",
+        role: "Product Owner & Scrum Master",
+        company: "Multiply Sales & Multiply College",
         description:
           "Encargado de los 2 software internos de la empresa y 1 externo, y liderando el departamento de IT junto al CTO, gestión diaria y priorización del backlog, líder de equipo de 2 desarrolladores y 1 diseñador, Tester y reporte de bugs, entre otros.",
-        tech: ["EOS", "Gestión de Backlog", "Jira"],
+        tech: ["EOS & Scrum", "Gestión de Backlog", "Jira"],
       },
       {
         year: "2023",
-        role: "CNO",
+        role: "Product Manager (CNO)",
         company: "Novolabs",
         description:
           "A cargo de dar acompañamiento a emprendedores en la creación de sus MVPs, y los pasos previos a llegar a generar un producto, como definición de modelo de negocio, entendimiento de su usuario/cliente, entre otros.",
-        tech: ["Emprendedurismo", "Startups", "MVP"],
+        tech: ["Product Strategy", "Product Discovery", "MVP"],
       },
       {
         year: "2022",
@@ -329,7 +329,7 @@ export const translations = {
         role: "Product Manager Mentor",
         company: "CoderHouse",
         description:
-          "Responsable por el avance de 22 alumnos, todos adultos profesionales del área de IT, a cargo de corregir todos los trabajos prácticos, acompañar en el avance de la cursada y ser de apoyo en caso de que fuera necesario.",
+          "Mentoricé a 22 estudiantes de Product Management, destrabando dudas y dando feedback sobre más de 186 entregas, alcanzando una calificación de 4.8/5 y un 93,25% de satisfacción.",
         tech: ["Metodologías ágiles", "Enseñar"],
       },
       {
@@ -338,7 +338,7 @@ export const translations = {
         company: "Panda Labs",
         description:
           "Desarrollo desde la idea, concepto hasta el primer producto funcional, disponible para descargar en Android y entornos de prueba en IOS, liderando un equipo de 3 personas, desarrollando con tecnologias no-code, airtable, firebase y BravoStudio.",
-        tech: ["No-Code", "Historias de usuarios", "Prototipado", "UX"],
+        tech: ["Product Manager", "Team Leadership", "Prototipado", "UX"],
       },
     ],
     projects: [
