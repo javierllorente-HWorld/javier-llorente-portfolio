@@ -311,42 +311,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
-            <div className="relative overflow-hidden border-2 border-dashed border-border rounded-lg p-6 bg-gradient-to-br from-muted/20 to-muted/5 hover:border-muted-foreground/30 transition-all duration-300 group">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <svg
-                    className="w-8 h-8 text-muted-foreground group-hover:text-foreground transition-colors duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                    />
-                  </svg>
-                </div>
-
-                <div className="flex-1 space-y-3">
-                  <h4 className="text-base font-medium">{t.portfolioMetaTitle}</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{t.portfolioMetaDescription}</p>
-
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {["Next.js", "TypeScript", "Tailwind CSS"].map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-0.5 text-xs font-medium text-foreground bg-background border border-border rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -429,10 +393,7 @@ export default function Home() {
           <div className="space-y-12 sm:space-y-16">
             <div className="space-y-8">
               <div className="space-y-3 sm:space-y-4">
-                <div className="inline-flex flex-col gap-2">
-                  <h3 className="text-3xl sm:text-4xl font-light">{t.tools}</h3>
-                  <div className="h-px w-12 bg-gradient-to-r from-muted-foreground/50 via-muted-foreground/25 to-transparent" />
-                </div>
+                <h3 className="text-3xl sm:text-4xl font-light">{t.tools}</h3>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
                   {t.stackDescription}
                 </p>
