@@ -134,6 +134,14 @@ export const translations = {
         tech: ["Cursor", "V0", "Fintech", "AI Product"],
         link: "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
       },
+      {
+        title: "Portfolio - Javier LLorente",
+        description:
+          "This is my personal portfolio, customized from an initial starter base—as a first hands-on experience using vibe coding to design, iterate, and publish my own site.",
+        image: "/icon.svg",
+        tech: ["Cursor", "V0", "GitHub", "AI tools"],
+        link: "https://github.com/javierllorente-HWorld/v0-javier-llorente-porfolio",
+      },
     ],
     posts: [
       {
@@ -335,6 +343,14 @@ export const translations = {
         image: "/icon.svg",
         tech: ["Cursor", "V0", "Fintech", "AI Product"],
         link: "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
+      },
+      {
+        title: "Portfolio - Javier LLorente",
+        description:
+          "Este es mi portfolio personal, personalizado a partir de una base inicial, como una primera experiencia práctica usando vibe coding para diseñar, iterar y publicar un sitio propio.",
+        image: "/icon.svg",
+        tech: ["Cursor", "V0", "GitHub", "AI tools"],
+        link: "https://github.com/javierllorente-HWorld/v0-javier-llorente-porfolio",
       },
     ],
     posts: [
