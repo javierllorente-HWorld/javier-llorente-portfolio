@@ -179,6 +179,10 @@ export default function Home() {
           <div className="space-y-12 sm:space-y-16">
             <h2 className="text-3xl sm:text-4xl font-light">{t.focus}</h2>
 
+            <p className="text-muted-foreground max-w-3xl leading-relaxed">
+    {t.focusDescription}
+  </p>
+
             <div className="flex flex-wrap gap-3">
               {t.focusTags.map((skill) => (
                 <span
