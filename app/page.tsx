@@ -176,10 +176,10 @@ export default function Home() {
           }}
           className="py-12 sm:py-16 opacity-0"
         >
-          <div className="space-y-12 sm:space-y-16">
+          <div className="space-y-6 sm:space-y-8">
             <h2 className="text-3xl sm:text-4xl font-light">{t.focus}</h2>
 
-            <p className="text-muted-foreground max-w-3xl leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
     {t.focusDescription}
   </p>
 
