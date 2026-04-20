@@ -121,42 +121,10 @@ export const translations = {
       {
         title: "SCRUM & KANBAN - Multiply",
         description:
-          "Applied Scrum and Kanban agile methodologies for managing multiple teams and products within Multiply. Served as Product Owner and Scrum Master, leading sprint planning, backlog prioritization, user story definition, and ceremony facilitation. The work enabled workflow optimization, improved cross-area communication, and reduced delivery times per sprint.",
+          "Applied Scrum and Kanban to improve team coordination, backlog prioritization, and sprint execution across multiple products.",
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
-        tech: ["Scrum", "Kanban", "Product Management", "Jira", "Agile Leadership"],
+        tech: ["Scrum", "Kanban", "Product Management", "Backlog Management"],
         link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
-      },
-      {
-        title: "Product and Go-to-market strategy - Novolabs",
-        description:
-          "Comprehensive product and go-to-market board for NovoLabs: includes pricing/value benchmark, Lean Canvas and roadmap, copy and funnels (landings and promos), organization (Gantt, mentorships, tracking), final product version, roles/ownership and marketing plan with operational costs.",
-        image: "/images/projects/novolabs-product-board.png",
-        tech: ["Pricing Strategy", "Project Management (Gantt)", "Go-to-Market"],
-        link: "https://www.figma.com/board/3QCtvuXRPbInzcP1CMZOeW/NovoLabs---Javi?node-id=0-1&t=8YYTWVwaLtFEHHMu-1",
-      },
-      {
-        title: "Discovery & UX Strategy - PANDA Labs",
-        description:
-          "End-to-end exploration: quantitative research (n=658), archetypes/POV, SWOT, TAM/SAM/SOM, competitive benchmark and value proposition; MVP definition (features, stories), IA/UX flows, initial UI, Business Model Canvas, pricing and PESO plan. Deliverables ready for decision and roadmap.",
-        image: "/images/projects/panda-labs-research.png",
-        tech: ["User Research", "UX Strategy", "Business Model Canvas"],
-        link: "https://docs.google.com/presentation/d/1qCxXXFvT8RzqhtaQ6KuHRXqeVgoHm69TMH8MOgCD0F8/edit?usp=sharing",
-      },
-      {
-        title: "No-Code App Development – PANDA Labs",
-        description:
-          "Designed and launched a functional app for Android and iOS using Bravo Studio and Airtable as database. The work covered the full cycle: architecture and wireframes, feature prioritization, MVP construction, user testing and QA, and data integrations for a production-ready app.",
-        image: "/images/projects/panda-labs-app-mockup.png",
-        tech: ["No-Code", "Figma", "Product Strategy", "MVP", "Prototyping"],
-        link: "https://drive.google.com/file/d/1xAERLSjE9MSXXo1bhUMw7t2UVezUB9my/view?usp=sharing",
-      },
-      {
-        title: "Comprehensive Journey, Operations and Opportunities Map – VICI",
-        description:
-          "Record made for the startup VICI, (A) service blueprint with notifications, (B) internal operational blueprint, (C) competitor journey benchmark and (D) opportunities and solutions map.",
-        image: "/images/projects/vici-service-blueprint.png",
-        tech: ["Service Blueprinting", "UX Benchmarking", "Systems Thinking"],
-        link: "https://miro.com/app/board/uXjVOJPUJLA=/?share_link_id=933053930541",
       },
     ],
     posts: [
@@ -347,9 +315,9 @@ export const translations = {
       {
         title: "SCRUM & KANBAN - Multiply",
         description:
-          "Apliqué metodologías ágiles Scrum y Kanban para la gestión de múltiples equipos y productos dentro de Multiply. Me desempeñé como Product Owner y Scrum Master, liderando la planificación de sprints, priorización de backlog, definición de historias de usuario y facilitación de ceremonias. El trabajo permitió optimizar los flujos, mejorar la comunicación entre áreas y reducir los tiempos de entrega por sprint.",
+          "Apliqué Scrum y Kanban para mejorar la coordinación de equipos, la priorización del backlog y la ejecución de sprints en múltiples productos.",
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
-        tech: ["Scrum", "Kanban", "Product Management", "Jira", "Agile Leadership"],
+        tech: ["Scrum", "Kanban", "Product Management", "Gestión de Backlog"],
         link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
       },
     ],

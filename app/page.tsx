@@ -273,7 +273,7 @@ export default function Home() {
                     <p className="text-xs text-muted-foreground leading-relaxed">{project.description}</p>
 
                     <div className="flex flex-wrap gap-1.5">
-                      {project.tech.slice(0, 3).map((tech) => (
+                      {project.tech.slice(0, 4).map((tech) => (
                         <span
                           key={tech}
                           className="px-2 py-0.5 text-xs text-muted-foreground bg-muted/30 border border-border rounded-md"
@@ -281,8 +281,8 @@ export default function Home() {
                           {tech}
                         </span>
                       ))}
-                      {project.tech.length > 3 && (
-                        <span className="px-2 py-0.5 text-xs text-muted-foreground">+{project.tech.length - 3}</span>
+                      {project.tech.length > 4 && (
+                        <span className="px-2 py-0.5 text-xs text-muted-foreground">+{project.tech.length - 4}</span>
                       )}
                     </div>
 
