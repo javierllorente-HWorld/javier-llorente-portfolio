@@ -372,7 +372,7 @@ export default function Home() {
                       {job.tech.map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
+                          className="px-2 py-1 text-xs text-muted-foreground bg-muted/20 border border-border/60 rounded-full"
                         >
                           {tech}
                         </span>

@@ -62,14 +62,14 @@ export const translations = {
     ],
     jobs: [
       {
-        year: "2026",
+        year: "2026 - Present",
         role: "Product Manager / AI Fintech Side Project",
         company: "Mateo / Self Employed",
         description: "I lead the development of MATEO, a fintech SaaS for LATAM SMBs, using AI to prototype faster, improve the UI, and build a functional version connected to a database.",
         tech: ["Fintech", "Artificial Intelligence"],
       },
       {
-        year: "2024",
+        year: "2024 - 2025",
         role: "Professional Growth",
         company: "Customer service en inglés / Supermercado retail",
         description:
@@ -77,7 +77,7 @@ export const translations = {
         tech: ["Resilience", "Adaptability", "English"],
       },
       {
-        year: "2023",
+        year: "2023 - 2024",
         role: "Product Owner & Scrum Master",
         company: "Multiply Sales & Multiply College",
         description:
@@ -85,7 +85,7 @@ export const translations = {
         tech: ["EOS & Scrum", "Backlog Management", "Jira"],
       },
       {
-        year: "2023",
+        year: "2023 - 2023",
         role: "Product Manager (CNO)",
         company: "Novolabs",
         description:
@@ -93,7 +93,7 @@ export const translations = {
         tech: ["Product Strategy", "Product Discovery", "MVP"],
       },
       {
-        year: "2022",
+        year: "2022 - 2022",
         role: "Product Manager",
         company: "VICI",
         description:
@@ -101,7 +101,7 @@ export const translations = {
         tech: ["UX", "Agile Methodologies"],
       },
       {
-        year: "2022",
+        year: "2022 - 2022",
         role: "Product Manager Mentor",
         company: "CoderHouse",
         description:
@@ -109,7 +109,7 @@ export const translations = {
         tech: ["Agile Methodologies", "Teaching"],
       },
       {
-        year: "2021",
+        year: "2021 - 2023",
         role: "Co-founder & Product Manager",
         company: "Panda Labs",
         description:
@@ -288,14 +288,14 @@ export const translations = {
     ],
     jobs: [
       {
-        year: "2026",
+        year: "2026 - Present",
         role: "Product Manager / AI Fintech Side Project",
         company: "Mateo / Self Employed",
         description: "Lidero el desarrollo de MATEO, un fintech SaaS para pymes de LATAM, usando IA para prototipar más rápido, mejorar la UI y construir una versión funcional conectada a base de datos.",
         tech: ["Fintech", "Inteligencia artificial"],
       },
       {
-        year: "2024",
+        year: "2024 - 2025",
         role: "Crecimiento profesional",
         company: "Atención al cliente en inglés / Supermercado retail",
         description:
@@ -303,7 +303,7 @@ export const translations = {
         tech: ["Resiliencia", "Adaptabilidad", "Inglés"],
       },
       {
-        year: "2023",
+        year: "2023 - 2024",
         role: "Product Owner & Scrum Master",
         company: "Multiply Sales & Multiply College",
         description:
@@ -311,7 +311,7 @@ export const translations = {
         tech: ["EOS & Scrum", "Gestión de Backlog", "Jira"],
       },
       {
-        year: "2023",
+        year: "2023 - 2023",
         role: "Product Manager (CNO)",
         company: "Novolabs",
         description:
@@ -319,7 +319,7 @@ export const translations = {
         tech: ["Product Strategy", "Product Discovery", "MVP"],
       },
       {
-        year: "2022",
+        year: "2022 - 2022",
         role: "Product Manager",
         company: "VICI",
         description:
@@ -327,7 +327,7 @@ export const translations = {
         tech: ["UX", "Metodologías ágiles"],
       },
       {
-        year: "2022",
+        year: "2022 - 2022",
         role: "Product Manager Mentor",
         company: "CoderHouse",
         description:
@@ -335,7 +335,7 @@ export const translations = {
         tech: ["Metodologías ágiles", "Enseñar"],
       },
       {
-        year: "2021",
+        year: "2021 - 2023",
         role: "Co-founder & Product Manager",
         company: "Panda Labs",
         description:
