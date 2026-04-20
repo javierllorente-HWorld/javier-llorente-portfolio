@@ -255,12 +255,6 @@ export default function Home() {
                   className={`group relative overflow-hidden border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-md ${index === 0 ? "bg-blue-500/5 border-blue-500/30 hover:border-blue-500/50" : ""
                     }`}
                 >
-                  {index === 0 && (
-                    <div className="absolute top-2 right-2 z-10 px-2 py-0.5 text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-800 rounded-full">
-                      {language === "es" ? "Destacado" : "Featured"}
-                    </div>
-                  )}
-
                   <div className="aspect-video relative overflow-hidden bg-muted">
                     <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                   </div>

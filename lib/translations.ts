@@ -126,6 +126,14 @@ export const translations = {
         tech: ["Scrum", "Kanban", "Product Management", "Backlog Management"],
         link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
       },
+      {
+        title: "AI Product - Mateo Fintech",
+        description:
+          "On GitHub you can explore the public repository, the demo, core features, and how it was built with AI tools, SQL, and Neon integration.",
+        image: "/icon.svg",
+        tech: ["Cursor", "V0", "Fintech", "AI Product"],
+        link: "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
+      },
     ],
     posts: [
       {
@@ -319,6 +327,14 @@ export const translations = {
         image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7dU7bMft4EpiiAGjVQTHErCZTOdSU0.png",
         tech: ["Scrum", "Kanban", "Product Management", "Gestión de Backlog"],
         link: "https://www.figma.com/board/f90IWzrg9DlUSr7sZDK3vH/SCRUM_Javier-LLorente?node-id=0-1&t=9Kf49BsNwJpodOqf-1",
+      },
+      {
+        title: "AI Product - Mateo Fintech",
+        description:
+          "En mi GitHub se puede ver el repositorio público, la demo, las funcionalidades principales y el proceso de construcción con AI tools, SQL e integración con Neon.",
+        image: "/icon.svg",
+        tech: ["Cursor", "V0", "Fintech", "AI Product"],
+        link: "https://github.com/javierllorente-HWorld/Vercel-Fintech-SaaS",
       },
     ],
     posts: [
