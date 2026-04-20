@@ -390,76 +390,76 @@ export default function Home() {
         >
           <div className="space-y-12 sm:space-y-16">
             <div className="space-y-8">
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="inline-flex flex-col gap-2">
                   <h3 className="text-2xl sm:text-3xl font-light">{t.tools}</h3>
-                  <div className="h-px w-12 bg-gradient-to-r from-muted-foreground/40 via-muted-foreground/20 to-transparent" />
+                  <div className="h-px w-12 bg-gradient-to-r from-muted-foreground/50 via-muted-foreground/25 to-transparent" />
                 </div>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
                   {t.stackDescription}
                 </p>
               </div>
 
-              <div className="relative border border-border/70 rounded-xl bg-muted/10 overflow-hidden shadow-sm">
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/[0.03] via-transparent to-transparent" />
-                <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border/60">
+              <div className="relative border border-border/50 rounded-2xl bg-muted/[0.06] overflow-hidden shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset]">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/[0.04] via-transparent to-transparent" />
+                <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border/40">
                   {t.toolCategories.map((category, index) => (
-                    <div key={index} className="p-5 sm:p-6 space-y-4">
-                      <div className="flex items-center gap-3">
+                    <div key={index} className="p-6 sm:p-7 space-y-5">
+                      <div className="flex items-center gap-3.5">
                         <div
                           className={[
-                            "flex h-8 w-8 items-center justify-center rounded-lg border shadow-sm",
+                            "flex h-9 w-9 items-center justify-center rounded-xl border shadow-[0_1px_0_rgba(255,255,255,0.04)_inset]",
                             index === 0
-                              ? "bg-purple-500/10 border-purple-500/20 text-purple-200"
+                              ? "bg-purple-500/[0.10] border-purple-500/20 text-purple-200"
                               : index === 1
-                                ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-200"
+                                ? "bg-emerald-500/[0.10] border-emerald-500/20 text-emerald-200"
                                 : index === 2
-                                  ? "bg-blue-500/10 border-blue-500/20 text-blue-200"
-                                  : "bg-amber-500/10 border-amber-500/20 text-amber-200",
+                                  ? "bg-blue-500/[0.10] border-blue-500/20 text-blue-200"
+                                  : "bg-amber-500/[0.10] border-amber-500/20 text-amber-200",
                           ].join(" ")}
                         >
                           {index === 0 ? (
-                            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg className="h-[18px] w-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                               <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                strokeWidth={2}
+                                strokeWidth={1.8}
                                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l5 5v11a2 2 0 0 1-2 2Z"
                               />
                             </svg>
                           ) : index === 1 ? (
-                            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 19V5m6 14V9m6 10V7m6 12V11" />
+                            <svg className="h-[18px] w-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M4 19V5m6 14V9m6 10V7m6 12V11" />
                             </svg>
                           ) : index === 2 ? (
-                            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg className="h-[18px] w-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                               <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                strokeWidth={2}
+                                strokeWidth={1.8}
                                 d="M12 3v3m0 12v3M6 12H3m18 0h-3M7.5 7.5l-2.1-2.1m18.2 18.2-2.1-2.1M16.5 7.5l2.1-2.1M5.4 23.6l2.1-2.1M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z"
                               />
                             </svg>
                           ) : (
-                            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg className="h-[18px] w-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                               <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                strokeWidth={2}
+                                strokeWidth={1.8}
                                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                               />
                             </svg>
                           )}
                         </div>
 
-                        <h4 className="text-base font-medium text-foreground tracking-wide">{category.name}</h4>
+                        <h4 className="text-[15px] font-medium text-foreground tracking-wide">{category.name}</h4>
                       </div>
 
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2.5">
                         {category.tools.map((tool) => (
                           <span
                             key={tool}
-                            className="px-2.5 py-1 text-[11px] leading-5 text-muted-foreground bg-background/20 border border-border/60 rounded-full hover:bg-background/30 hover:text-foreground hover:border-border/80 transition-colors duration-300"
+                            className="px-3 py-1 text-[11px] leading-5 text-muted-foreground bg-background/15 border border-border/50 rounded-full hover:bg-background/25 hover:text-foreground hover:border-border/70 transition-colors duration-300"
                           >
                             {tool}
                           </span>
@@ -470,16 +470,16 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative border border-border/60 rounded-xl bg-muted/5 px-4 py-3 overflow-hidden">
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-muted/20 via-transparent to-transparent" />
-                <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div className="relative border border-border/50 rounded-2xl bg-muted/[0.04] px-4 py-3.5 overflow-hidden">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-muted/25 via-transparent to-transparent" />
+                <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3.5">
                   <div className="flex items-center gap-2.5">
-                    <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-muted/30 border border-border/60 text-muted-foreground">
-                      <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-background/10 border border-border/50 text-muted-foreground shadow-[0_1px_0_rgba(255,255,255,0.03)_inset]">
+                      <svg className="h-[18px] w-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          strokeWidth={2}
+                          strokeWidth={1.8}
                           d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                         />
                       </svg>
@@ -487,11 +487,11 @@ export default function Home() {
                     <h4 className="text-sm font-medium text-foreground/90">{t.learningTools}</h4>
                   </div>
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2.5">
                     {t.learningToolsList.map((tool) => (
                       <span
                         key={tool}
-                        className="px-2.5 py-1 text-[11px] leading-5 text-muted-foreground bg-background/20 border border-border/60 rounded-full"
+                        className="px-3 py-1 text-[11px] leading-5 text-muted-foreground bg-background/15 border border-border/50 rounded-full"
                       >
                         {tool}
                       </span>
