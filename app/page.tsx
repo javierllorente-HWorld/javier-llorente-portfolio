@@ -352,7 +352,7 @@ export default function Home() {
                   <div className="lg:col-span-2">
                     <div className="flex items-start gap-3">
                       <span className="mt-2 h-2 w-2 rounded-full bg-blue-500 ring-4 ring-background relative -left-[17px]" aria-hidden="true" />
-                      <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
+                      <div className="text-lg sm:text-xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500 whitespace-nowrap">
                         {job.year}
                       </div>
                     </div>
@@ -378,6 +378,13 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
+
+                    <Link
+                      href="#"
+                      className="inline-flex text-xs text-muted-foreground hover:text-foreground transition-colors duration-300"
+                    >
+                      Related work →
+                    </Link>
                   </div>
                 </div>
               ))}
